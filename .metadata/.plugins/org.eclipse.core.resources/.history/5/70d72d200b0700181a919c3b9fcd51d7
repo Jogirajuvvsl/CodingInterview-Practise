@@ -1,0 +1,16 @@
+
+public class Palim {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	int x=0;
+	Integer n=new Integer(x);
+	String st=n.toString();
+	StringBuffer sb=new StringBuffer(st);
+	System.out.print(st);
+	System.out.println(sb.reverse());
+		
+	}
+
+}

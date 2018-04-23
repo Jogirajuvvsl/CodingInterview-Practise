@@ -1,0 +1,37 @@
+public class MagicIndexWithDuplicates {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    int[] number= {1,1,3,5};
+	System.out.println(magicIndexWithDuplicates(number,0,number.length-1));
+		
+		
+	}
+	
+	public static int magicIndexWithDuplicates(int[] numbers,int low,int end)
+	{
+	    int mid=0,posLeft,posRight;
+	    while(low<=end)
+	    {
+	       mid=(low+end)>>1;
+	       if(numbers[mid]==mid)
+	    	      return mid;
+	       else if(numbers[mid]>mid)
+	       { posLeft=magicIndexWithDuplicates(numbers,numbers[mid],end);
+	         if(posLeft!=-1)
+	        	 return posLeft;
+	         
+	         }
+	       else  if(numbers[mid]<mid)
+	    	          posRight= magicIndexWithDuplicates(numbers,low,numbers[mid]);
+	    
+	   }
+		
+		
+		
+		
+		return -1;
+		
+	}
+	
+}

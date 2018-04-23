@@ -1,0 +1,32 @@
+
+public class compareto {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class box
+{
+	int ht;
+	int wt;
+	int bt;
+	public box(int ht,int wt,int bt)
+	{
+		this.ht=ht;
+		this.wt=wt;
+		this.bt=bt;
+		
+	}
+	int compareTo(box b)
+	{
+		return this.ht<b.ht&&
+		
+		
+	}
+	
+	
+	
+}
