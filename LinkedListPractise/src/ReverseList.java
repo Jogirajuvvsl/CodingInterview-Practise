@@ -41,6 +41,7 @@ class Solution {
      {
          System.out.println(second.val);
          ListNode temp=second.next;
+         first.next=temp;
          second.next=first;
          first=second;
          second=temp;
